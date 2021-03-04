@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#m_topbar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.m_subnav{
+    position: relative;
+    z-index: 100;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: #242424;
+    border-bottom: 1px solid #000000;
+}
+#m_topbar .wrap{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+.m_subnav .logo{
+    float: left;
+    width: 40px;
+    background: url("../images/topbar.png")no-repeat;
+    height: 69px;
+    margin-top: 14px;
+}
+.m_subnav .logo_font{
+    font-family:FangSong ;
+    line-height: 69px;
+}
+.m_subnav .logo_fontys{
+    color: #ffffff;
+    font-size: 20px;
+}
+.m_nav li{
+    position: relative;
+    background-position: right -300px;
+}
+.m_nav li,.m_nav a{
+    float: left;
+    height: 70px;
+    font-size: 14px;
+}
+.m_nav a{
+    padding: 0 19px;
+    text-align: center;
+    line-height: 70px;
+    color: #ccc;
+}
+.search_bg{
+    width:158px ;
+    height: 70px;
+}
+.search_bg .input_bg{
+    line-height: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+.search_bg input[type="text"]{
+    width: 158px;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 0px 0 0 26px;
+    border-radius: 50px;
+}
+.search_bg .input_bg{
+    position: relative;
+}
+.search_bg .input_bg>span{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+.songercenter{
+    width: 100px;
+    height: 70px;
+}
+.songercenter .song_cur{
+    height: 32px;
+    text-align: center;
+    margin: 19px 0 0 12px;
+    border: 1px #cccccc solid;
+    border-radius: 20px;
+}
+.songercenter a{
+    display: block;
+    line-height: 32px;
+    color: #cccccc;
+    font-size: 14px;
+}
+.top_login{
+    float: right;
+    height: 45px;
+    margin: 26px 0 0 20px;
+    padding: 0 22px 0 0;
+}
+.top_login a{
+    color: #cccccc;
+}
+/*第二*/
+.m_subnav2{
+    position: relative;
+    z-index: 90;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: rgb(84, 2, 94);
+    border-bottom: 1px solid #8d29cb;
+}
+.m_nav2{
+    margin-left: 154px;
+}
+.m_nav2 li{
+    position: relative;
+
+}
+.m_nav2 li,.m_nav2 a{
+    float: left;
+    height: 35px;
+    font-size: 12px;
+}
+.m_nav2 a{
+    padding: 0 19px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+}
+#m_firban{
+    position: absolute;
+    left: 0;
+    top: 105px;
+    width: 100%;
+    z-index: 99;
+}
+#m_firban .wrap{
+    position: relative;
+    width: 982px;
+    height: 285px;
+    margin: 0 auto;
+}
+#m_bomain{
+    position: absolute;
+    left: 0;
+    top: 105px;
+    width: 100%;
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
