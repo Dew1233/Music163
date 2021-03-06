@@ -254,14 +254,14 @@ p,a{
     border: 1px solid #fff;
 }
 .m_newdisk .m_roll{
-    float: left;
-    width: 645px;
+    /*float: left;*/
+    /*width: 645px;*/
     height: 180px;
     overflow: hidden;
 }
 .m_newdisk ul{
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;*/
     width: 645px;
     margin: 28px 0 0 0;
 }
@@ -353,6 +353,7 @@ p,a{
     float: right;
     width: 82px;
     margin-top: 7px;
+    /*display: none;*/
 }
 .m_blistpart .m_blistoper a{
     float: left;
@@ -489,11 +490,85 @@ p,a{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+/*首页轮播图*/
+.mban_img{
+    width: 730px;
+    height:283px ;
+    position: relative;
+    overflow: hidden;
+}
+#img_list{
+    position: absolute;
+    left: 0;
+}
+#img_list li{
+    width: 730px;
+    height:283px;
+    float: left;
+}
+/*#img_listbox .span{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align: center;
+    border-radius:50%;
+    color:white;
+}*/
+#m_contpointer{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+#m_arcbox{
+    position: relative;
+    width: 730px;
+    margin: 0 auto;
+}
+#m_arcbox span.span{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.m_cbtn{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 37px;
+    height: 63px;
+    text-indent: -9999px;
+}
+#prev{
+    left: -68px;
+    background: url("../images/m_prev.png");
+}
+#next{
+    right: -68px;
+    background: url("../images/m_next.png");
+}
+#m_firban{
+    background: url("../images/topbanbg.jpg");
+}
 
 
-
-
-
+.m_newdisk .m_inner{
+    position: relative;
+    overflow: hidden;
+    width:668px;
+}
+.m_newdisk .m_roll{
+    position: absolute;
+    left: 0;
+    display: flex;
+    /*width: 2100px;*/
+}
+.m_roll ul{
+    width:689px;
+    height: 150px;
+}
 
 
 

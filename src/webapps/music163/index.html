@@ -5,6 +5,7 @@
     <title>有只云音乐</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="images/icon.ico" type="image/x-icon"/>
+    <script type="application/javascript" src ="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.js"></script>
 </head>
 <body>
 <!--页头-->
@@ -61,13 +62,27 @@
 <!--首页轮播图-->
 <div id="m_firban">
     <div class="wrap">
-        <div class="m_ban">
-            <div class="mban_img">
-                <!--歌单链接-->
+        <div class="m_ban" id="parent">
+            <div id="img_listbox" class="mban_img">
+               <!-- &lt;!&ndash;歌单链接&ndash;&gt;
                 <a href="#">
                     <img src="images/topban_01.jpg" alt="">
-                </a>
+                </a>-->
+                <ul id="img_list">
+                    <li><a  href=""><img src="images/topban_01.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/topban_02.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/topban_03.jpg" alt=""></a></li>
+                </ul>
             </div>
+            <a onclick="chefElement" id="prev" class="m_cbtn" href="javascript:void(0)">向左</a>
+            <a onclick="chefElement" class="m_cbtn" id="next" href="javascript:void(0)">向右</a>
+            <div id="m_contpointer">
+                   <div id="m_arcbox">
+
+                   </div>
+            </div>
+        <div>
+        </div>
         </div>
         <div class="m_down">
             <a id="m_sidedownload" class="m_btn" href=""></a>
@@ -75,7 +90,6 @@
             <span class="shadow"></span>
             <span class="shadowr"></span>
         </div>
-
     </div>
 </div>
 <!--首页主体内容-->
@@ -179,7 +193,65 @@
                                          <p class="m_disktit m_diskauthor">周深 / 钱正昊 / 张紫宁 / 蔡文静 / 颜人中 / 刘思涵</p>
                                      </li>
                                  </ul>
+                                 <ul>
+                                     <li>
+                                         <div class="m_cover">
+                                             <img src="images/newdisk_item05.jpg" alt=""></div>
+                                         <p class="m_disktit">Celebrity</p>
+                                         <p class="m_disktit m_diskauthor">IU</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item05.jpg" alt=""></div>
+                                         <p class="m_disktit">Love Story (Taylor’s Version)</p>
+                                         <p class="m_disktit m_diskauthor">Taylor Swift</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item05.jpg" alt=""></div>
+                                         <p class="m_disktit">余额</p>
+                                         <p class="m_disktit m_diskauthor">孙燕姿</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item05.jpg" alt=""></div>
+                                         <p class="m_disktit">同渡</p>
+                                         <p class="m_disktit m_diskauthor">金玟岐</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item05.jpg" alt=""></div>
+                                         <p class="m_disktit">玲珑 电视原声带</p>
+                                         <p class="m_disktit m_diskauthor">周深 / 钱正昊 / 张紫宁 / 蔡文静 / 颜人中 / 刘思涵</p>
+                                     </li>
+                                 </ul>
+                                 <ul>
+                                     <li>
+                                         <div class="m_cover">
+                                             <img src="images/newdisk_item04.jpg" alt=""></div>
+                                         <p class="m_disktit">Celebrity</p>
+                                         <p class="m_disktit m_diskauthor">IU</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item04.jpg" alt=""></div>
+                                         <p class="m_disktit">Love Story (Taylor’s Version)</p>
+                                         <p class="m_disktit m_diskauthor">Taylor Swift</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item04.jpg" alt=""></div>
+                                         <p class="m_disktit">余额</p>
+                                         <p class="m_disktit m_diskauthor">孙燕姿</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item04.jpg" alt=""></div>
+                                         <p class="m_disktit">同渡</p>
+                                         <p class="m_disktit m_diskauthor">金玟岐</p>
+                                     </li>
+                                     <li>
+                                         <div class="m_cover"><img src="images/newdisk_item04.jpg" alt=""></div>
+                                         <p class="m_disktit">玲珑 电视原声带</p>
+                                         <p class="m_disktit m_diskauthor">周深 / 钱正昊 / 张紫宁 / 蔡文静 / 颜人中 / 刘思涵</p>
+                                     </li>
+                                 </ul>
                              </div>
+
+
                          </div>
                      </div>
                 </div>
@@ -214,7 +286,7 @@
                                     <li>
                                         <span class="no_top">1</span>
                                         <a class="m_disktit" href="">promise</a>
-                                        <div class="m_blistoper">
+                                        <div class="m_blistoper" >
                                             <a href="" ><img src="images/btn_player.png" alt=""></a>
                                             <a href="" ><img src="images/btn_addlist.png" alt=""></a>
                                             <a href="" ><img src="images/btn_coll.png" alt=""></a>
@@ -424,7 +496,7 @@
 
 
                         </dl>
-                        <dl class="m_blistpart">
+                        <dl class="m_blistpart" >
                             <dt class="top">
                                 <div class="m_toprise">
                                     <img src="images/billlist_item03.jpg" alt="">
@@ -455,7 +527,7 @@
                                     <li>
                                         <span class="no_top">2</span>
                                         <a href="">promise</a>
-                                        <div class="m_blistoper">
+                                        <div class="m_blistoper" >
                                             <a href="" ><img src="images/btn_player.png" alt=""></a>
                                             <a href="" ><img src="images/btn_addlist.png" alt=""></a>
                                             <a href="" ><img src="images/btn_coll.png" alt=""></a>
@@ -509,7 +581,7 @@
                                     <li>
                                         <span class="no_top">8</span>
                                         <a href="">promise</a>
-                                        <div class="m_blistoper">
+                                        <div class="m_blistoper" >
                                             <a href="" ><img src="images/btn_player.png" alt=""></a>
                                             <a href="" ><img src="images/btn_addlist.png" alt=""></a>
                                             <a href="" ><img src="images/btn_coll.png" alt=""></a>
@@ -712,4 +784,26 @@
     </div>
 </div>
 </body>
+<script type="application/javascript" src="js/carousel.js"></script>
+<script>
+    $(function(){
+        var timer = null;
+        var index = 0;
+
+        function next() {
+            index++;
+            if(index>2){
+                $(".m_roll").animate({left:-(index)*690},500);
+                index = 0;
+                $(".m_roll").animate({left:0},0);
+            }
+            $(".m_roll").animate({left:-(index)*690},500);
+        }
+        $(function auto() {
+            timer = setInterval(function () {
+                next();
+            },3000);
+        })
+    })
+</script>
 </html>
